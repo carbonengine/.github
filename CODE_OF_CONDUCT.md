@@ -1,5 +1,7 @@
 # Code of Conduct
 
+By participating in Carbon spaces, you agree to abide by this Code of Conduct
+
 The Carbon Development Platform (CDP) community includes seasoned engineers, weekend modders, technical writers, and curious newcomers. We work better when every voice is heard and treated with respect, so we start with a short set of ground rules.
 
 These rules aren’t a catalogue of “don’ts.” Treat them as a shared compass to keep conversations constructive and inclusive. They apply to all Carbon-run spaces—GitHub issues, pull requests, Discussions, CCP-hosted events for Carbon, and any CCP-hosted channels used for Carbon. Serious misconduct elsewhere can still affect someone’s ability to participate here.
