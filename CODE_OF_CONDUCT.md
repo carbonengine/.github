@@ -1,6 +1,6 @@
 # Code of Conduct
 
-By participating in Carbon spaces, you agree to abide by this Code of Conduct
+*By participating in Carbon spaces, you agree to abide by this Code of Conduct
 
 The Carbon Development Platform (CDP) community includes seasoned engineers, weekend modders, technical writers, and curious newcomers. We work better when every voice is heard and treated with respect, so we start with a short set of ground rules.
 
