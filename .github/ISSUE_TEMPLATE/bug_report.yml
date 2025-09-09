@@ -1,0 +1,115 @@
+name: "Bug Report"
+description: "Report a reproducible problem in this repository. Incomplete reports make it hard to reproduce issues and may be closed."
+title: "[Bug] <concise summary here>"
+labels: [bug]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Before you file a bug**
+        - Please follow the guidelines below — it helps us find and fix issues faster.
+        - **One issue per bug.** If you have multiple bugs, open a separate issue for each.
+        - **Search open and closed issues** first. If you’re unsure, file the issue; maintainers will de-duplicate if needed.
+        - Include a **minimal reproduction** (a link to a repo/branch/PR or a small zip).
+
+  # ------------------------------------------------------------------
+  # Version / environment
+  # ------------------------------------------------------------------
+  - type: input
+    id: commit
+    attributes:
+      label: "Commit hash or tag"
+      description: "`git rev-parse --short HEAD` or release tag"
+      placeholder: "abcd1234"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: os
+    attributes:
+      label: "Operating system"
+      options:
+        - Windows 10/11
+        - macOS
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    id: toolchain
+    attributes:
+      label: "Tool-chain details"
+      description: |
+        Compiler / interpreter versions, build system, etc.
+        Example: MSVC 19.38 · CMake 3.28 · Python 3.11.3
+      placeholder: "clang 16, Ninja 1.11, Python 3.10.7"
+    validations:
+      required: true
+
+  # ------------------------------------------------------------------
+  # Reproduction
+  # ------------------------------------------------------------------
+  - type: textarea
+    id: steps
+    attributes:
+      label: "Steps to reproduce"
+      description: "Numbered steps from a clean clone."
+      placeholder: |
+        1. git clone --recursive ...
+        2. <build / run commands>
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "Expected behaviour"
+      placeholder: "Tests pass and exit code is 0."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: "Actual behaviour"
+      placeholder: |
+        Test `Scheduler_StopResume` fails with:
+        > Assertion failed: resume_count == 3 (scheduler.cpp:245)
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: "Minimal reproduction (link or attachment)"
+      description: |
+        A small branch / PR / repository, zip file, or code block showing the bug in isolation.
+        Issues **without a minimal repro may be closed.**
+      placeholder: "Link or attach here"
+    validations:
+      required: true
+
+  # ------------------------------------------------------------------
+  # Extras
+  # ------------------------------------------------------------------
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Logs, screenshots, or video (optional)"
+      placeholder: "Drag-and-drop files or paste console output"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: "Final checklist"
+      options:
+        - label: "I searched open and closed issues for duplicates."
+          required: true
+        - label: "I reproduced this problem on the **main** branch."
+          required: true
+        - label: "The minimal reproduction is attached or linked."
+          required: true
