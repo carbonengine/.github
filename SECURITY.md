@@ -33,6 +33,7 @@ For sensitive reports, we may use GitHub **Security Advisories** to collaborate 
 We provide security fixes for:
 - The `main` branch
 - The most recent tagged release per repository
+
 Older releases, archived modules, or forks are **not** supported for security patches.
 
 ## Out of Scope (Carbon OSS)
