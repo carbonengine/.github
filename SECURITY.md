@@ -3,11 +3,11 @@ As CARBON, we take security seriously. This page explains **how to report vulner
 ---
 ## Scope
 This policy applies to **all public repositories under the `carbonengine` GitHub organization** and any packages/images we publish from those repos.
-It does **not** cover FC’s production game services or player accounts (EVE Online, Vanguard, etc.). If your finding relates to FC games or live services, please follow the company’s Vulnerability Disclosure Program and contact **security@ccpgames.com**.
+It does **not** cover FC’s production game services or player accounts (EVE Online, Vanguard, etc.). If your finding relates to FC games or live services, please follow the company’s Vulnerability Disclosure Program and contact **security@fenris.com**.
 ---
 ## How to Report
 - **Please DO NOT open a public issue for security problems.**  
-  Email **security@ccpgames.com** with the subject line:  
+  Email **security@fenris.com** with the subject line:  
   `Vulnerability Report: <brief description>`
 Include as much detail as you can:
 - Commit hash or release tag
@@ -41,8 +41,8 @@ The following are **not** considered security issues for this policy:
 - Findings that require access only to **your own** account/data
 - **Third-party dependency** vulnerabilities (please report upstream); if they impact Carbon, include the specific exploit path
 - **Social engineering** or phishing
-- Issues in **FC's production services** (report to **security@ccpgames.com** under the main VDP instead)
-If in doubt, ask us first at **security@ccpgames.com**.
+- Issues in **FC's production services** (report to **security@fenris.com** under the main VDP instead)
+If in doubt, ask us first at **security@fenris.com**.
 ---
 ## After a Fix
 When a fix is ready, we will:
@@ -51,6 +51,6 @@ When a fix is ready, we will:
 - Coordinate public disclosure timing with the reporter
 ---
 ## Contact
-- **Primary:** security@ccpgames.com  
-- **Back-up (non-sensitive questions):** open a GitHub Discussion in the relevant repo
+- **Primary:** security@fenris.com  
+- **Back-up (non-sensitive questions):** open an Issue in the relevant repo
 Thank you for helping keep Carbon (and the developers who depend on it) safe.
