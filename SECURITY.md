@@ -1,9 +1,11 @@
 # Security Policy
 As CARBON, we take security seriously. This page explains **how to report vulnerabilities privately**, what’s **in scope** for the open-source code we publish on GitHub, and **what you can expect from us**.
+
 ---
 ## Scope
 This policy applies to **all public repositories under the `carbonengine` GitHub organization** and any packages/images we publish from those repos.
 It does **not** cover FC’s production game services or player accounts (EVE Online, Vanguard, etc.). If your finding relates to FC games or live services, please follow the company’s Vulnerability Disclosure Program and contact **security@fenris.com**.
+
 ---
 ## How to Report
 - **Please DO NOT open a public issue for security problems.**  
@@ -17,8 +19,10 @@ Include as much detail as you can:
 - Environment (OS, compiler/interpreter, build system)
 - Your contact info and whether you prefer to remain anonymous
 If you’re unsure whether something qualifies as a security issue, **send it anyway** and we’ll help triage.
-###AI-generated reports. 
+
+### AI-generated reports. 
 We **do not** accept vulnerability reports that appear to be unverified AI output, generic "potential" issues without a working reproduction. AI tools are fine for analysis however, the report itself must come from a human who has verified the issue, can reproduce it from a clean clone, and can discuss it. Reports that fail this bar will be closed without detailed triage.
+
 ---
 ## Our Process & Timelines
 - **Acknowledgement:** We aim to respond within **3 business days**.
