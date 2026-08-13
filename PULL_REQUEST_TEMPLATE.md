@@ -59,9 +59,8 @@ PR closed is unverified output you can't stand behind, not the use of AI. -->
 ---
 
 <!--
-Heads-up: builds run on our internal CI, not GitHub Actions. On most repos a
-maintainer triggers the build after an initial review; on a few it runs
-automatically. Results appear as commit status checks. If you don't see activity
+Heads-up: builds run on our internal CI, not GitHub Actions. On all repos a
+maintainer triggers the build after an initial review. Results appear as commit status checks. If you don't see activity
 within a few working days, comment on the PR (the maintainers are subscribed), or
 @-mention the maintainers team shown in its reviewers.
 -->
