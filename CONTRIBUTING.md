@@ -1,6 +1,6 @@
-# Contributing to the Carbon Development Platform
+# Contributing to the Carbon Engine
 
-Welcome, and thanks for considering a contribution to the Carbon Development Platform, the technology behind EVE Online and EVE Frontier. We're open-sourcing it piece by piece, so this guide will keep evolving. Use your best judgement, and feel free to suggest changes to it in a PR.
+Welcome, and thanks for considering a contribution to the Carbon Engine, the technology behind EVE Online and EVE Frontier. We're open-sourcing it piece by piece, so this guide will keep evolving. Use your best judgement, and feel free to suggest changes to it in a PR.
 
 ## TL;DR
 
