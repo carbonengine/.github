@@ -1,9 +1,19 @@
+
+
 name: "Bug Report"
 description: "Report a reproducible problem in this repository. Incomplete reports make it hard to reproduce issues and may be closed."
 title: "[Bug] <concise summary here>"
 labels: [bug]
 
 body:
+
+  - type: markdown
+    attributes:
+      value: |
+        > ⚠️ **Found a security issue? Do not file it here.**
+        > Do not open a public issue for security vulnerabilities. See our
+        > [Security Policy](https://github.com/carbonengine/.github/blob/main/SECURITY.md)
+        > for how to report privately.
   - type: markdown
     attributes:
       value: |
@@ -32,6 +42,7 @@ body:
       options:
         - Windows 10/11
         - macOS
+        - Other
       default: 0
     validations:
       required: true
@@ -42,8 +53,8 @@ body:
       label: "Tool-chain details"
       description: |
         Compiler / interpreter versions, build system, etc.
-        Example: MSVC 19.38 · CMake 3.28 · Python 3.11.3
-      placeholder: "clang 16, Ninja 1.11, Python 3.10.7"
+        Example: MSVC v141 · CMake 3.31 · Python 3.11.3
+      placeholder: "MSVC v141, CMake 3.31, Python 3.11.3"
     validations:
       required: true
 

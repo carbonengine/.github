@@ -1,5 +1,5 @@
 # Security Policy
-As CARBON, we take security seriously. This page explains **how to report vulnerabilities privately**, what’s **in scope** for the open-source code we publish on GitHub, and **what you can expect from us**.
+Carbon Engine takes security seriously. This page explains **how to report vulnerabilities privately**, what’s **in scope** for the open-source code we publish on GitHub, and **what you can expect from us**.
 
 ---
 ## Scope
@@ -8,17 +8,25 @@ It does **not** cover FC’s production game services or player accounts (EVE On
 
 ---
 ## How to Report
-- **Please DO NOT open a public issue for security problems.**  
-  Email **security@fenris.com** with the subject line:  
-  `Vulnerability Report: <brief description>`
-Include as much detail as you can:
-- Commit hash or release tag
-- Steps to reproduce (from a clean clone)
-- Technical details (logs, requests/responses, payloads)
-- Impact (what an attacker could achieve)
-- Environment (OS, compiler/interpreter, build system)
-- Your contact info and whether you prefer to remain anonymous
-If you’re unsure whether something qualifies as a security issue, **send it anyway** and we’ll help triage.
+**Please DO NOT open a public issue for security problems.**
+
+Report vulnerabilities through **GitHub private vulnerability reporting**: 
+- On the affected repository:
+  - Open the **Security** tab and click **Report a vulnerability**.
+  - This opens a private advisory only the maintainers can see, and keeps the report,
+discussion, and fix coordination in one private place.
+  - For a step-by-step walkthrough of GitHub's private reporting flow, see [Privately reporting a security vulnerability](https://docs.github.com/en/code-security/how-tos/report-and-fix-vulnerabilities/report-privately).
+
+
+In your advisory **Description**, please include as much detail as you can, e.g.:
+ - Commit hash or release tag
+ - Steps to reproduce (from a clean clone)
+ - Technical details (logs, requests/responses, payloads)
+ - Impact (what an attacker could achieve)
+ - Environment (OS, compiler/interpreter, build system)
+ - Your contact info and whether you prefer to remain anonymous
+ 
+ If you're unsure whether something qualifies as a security issue, **send it anyway** and we'll help triage.
 
 ### AI-generated reports. 
 We **do not** accept vulnerability reports that appear to be unverified AI output, generic "potential" issues without a working reproduction. AI tools are fine for analysis however, the report itself must come from a human who has verified the issue, can reproduce it from a clean clone, and can discuss it. Reports that fail this bar will be closed without detailed triage.
@@ -55,6 +63,6 @@ When a fix is ready, we will:
 - Coordinate public disclosure timing with the reporter
 ---
 ## Contact
-- **Primary:** security@fenris.com  
-- **Back-up (non-sensitive questions):** open an Issue in the relevant repo
-Thank you for helping keep Carbon (and the developers who depend on it) safe.
+- **Report a vulnerability:** GitHub **Security** tab → **Report a vulnerability** on the affected repo
+- **Back-up contact (follow-up, coordination, off-platform comms):** security@fenris.com
+- **Non-sensitive questions:** open an Issue in the relevant repo
