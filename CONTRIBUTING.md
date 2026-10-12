@@ -8,7 +8,7 @@ Welcome, and thanks for considering a contribution to the Carbon Engine, the tec
 - Bug fixes and small improvements are welcome. For anything large, open an issue first (see What we accept).
 - Keep commits small and scoped. (~300 lines is a good target for a fast review, but not a hard rule, larger is fine if the change is atomic.)
 - On your first PR the CLA bot posts a link to sign. Sign once and it covers every carbonengine repo.
-- Builds run on our internal CI, a maintainer usually kicks it off after an initial review, and you'll see status checks on your PR.
+- Builds run on our internal CI, a maintainer kicks it off after an initial review, and you’ll see status checks on your PR.
 
 This is the canonical contribution guide for every repo under https://github.com/carbonengine. Individual repos may add a local CONTRIBUTING.md that extends this one for component-specific details (build commands, test runner, extra labels). A repo-local file should be short and link back here.
 
@@ -20,7 +20,7 @@ Carbon Engine backs live games, and we steer its direction. Contributions are ge
 
 - **Welcome:** bug fixes, small improvements, documentation, and fixes to things that are clearly broken.
 - **Discuss first:** anything large or structural (new features, refactors, API changes). Open an issue before you write the code, so we can tell you whether it fits our development plans before you invest time.
-- **What to expect:** the roadmap is largely driven by our needs and the games we ship. A well-made contribution can still be declined if it doesn't fit that direction. If we close something as `out-of-scope`, please understand that it's not a comment on the quality of your work and we truly appreciate your contributions regardless.
+- **What to expect:** the roadmap is largely driven by our needs and the games we ship. A well-made contribution can still be declined if it doesn’t fit that direction. If we mark something as accepted, it means we want it but it’s waiting on other work or isn’t scheduled yet, so it may be a while before we get to it and we can’t give dates. If we close something as out-of-scope, please understand that it’s not a comment on the quality of your work and we truly appreciate your contributions regardless.
 
 ### Ground rules
 
@@ -66,10 +66,12 @@ If you find a security vulnerability, **do not file a public issue**. See our [S
 
 A good litmus test to determine if you are dealing with a security issue, ask:
 
-- Can I disable something for other people?
-- Can I access something that I shouldn't have access to?
+Can I disable something for other people?
+Can I access something that I shouldn’t have access to?
 
-If you find yourself answering "yes" to either of these, then you are most likely dealing with a security vulnerability. However, it is very possible that even if you answer "no" to both questions, you may still be dealing with a security vulnerability, so if you're unsure just email us at opensource@fenris.com.
+If you find yourself answering “yes” to either of these, then you are most likely dealing with a security vulnerability. However, it is very possible that even if you answer “no” to both questions, you may still be dealing with a security vulnerability, so if you’re unsure, report it privately anyway as described in our Security Policy, or email security@fenris.com.
+
+Crashes from oversized or malformed input are bugs rather than security issues, so please report those as normal issues. The out-of-scope list in SECURITY.md has the full list of what doesn’t count.
 
 For any other bug, please create an issue using the [Bug Report](https://github.com/carbonengine/.github/blob/main/.github/ISSUE_TEMPLATE/bug_report.yml) template. Please search existing issues before filing a new one and include repro steps and system info when reporting bugs.
 
@@ -105,7 +107,7 @@ To have your contribution considered:
 3. Each PR should be one logical change.
 4. Update docs and CHANGELOG.md where relevant (skip if the repo has no CHANGELOG yet).
 
-Note: builds and tests run on FC's internal CI. Status is posted back to your PR as commit status checks. On most repos a maintainer triggers the build after an initial review. If your PR sits with no status for more than a few working days, comment on the PR (the maintainers are subscribed and will be notified), or @-mention the maintainers team shown in its reviewers.
+Note: builds and tests run on FC's internal CI. Status is posted back to your PR as commit status checks. On all repos a maintainer triggers the build after an initial review. If your PR sits with no status for more than a few working days, comment on the PR (the maintainers are subscribed and will be notified), or @-mention the maintainers team shown in its reviewers.
 
 ### Git commits
 
@@ -152,7 +154,7 @@ Update inline API comments and docstrings when you change behaviour. Add or edit
 
 These are the common labels. Individual repos may add component-specific ones.
 
-**Issue labels**
+**Labels**
 
 | Label | Meaning |
 | --- | --- |
@@ -161,7 +163,8 @@ These are the common labels. Individual repos may add component-specific ones.
 | `documentation` | Documentation issues or changes |
 | `good first issue` | Small, self-contained tasks suitable for newcomers (applied by maintainers) |
 | `help wanted` | Something we'd welcome a contributor picking up |
-| `question` | A question that should move to email rather than stay an issue |
+| `accepted` | Something we want, or a confirmed bug, that's waiting on other work or isn't scheduled yet | 
+| `question` | A question rather than a bug report or feature request |
 | `duplicate` | Duplicate of another issue |
 | `invalid` | Not a valid issue (for example, user error) |
 | `out-of-scope` | A valid request that doesn't fit the project's direction |
@@ -176,7 +179,9 @@ Each repository states its own license in its root, and the choice is made per r
 
 ## Response expectations
 
-We aim to acknowledge new issues and PRs as soon as we reasonably can. We're early in the open-source roll-out, so some things may be slower for now while we settle the public process. If a PR has been quiet for more than a few working days, comment on the PR (the maintainers are subscribed), or @-mention the maintainers team shown in its reviewers.
+We aim to acknowledge new issues and PRs as soon as we reasonably can. We’re early in the open-source roll-out, so some things may be slower for now while we settle the public process. If a PR has been quiet for more than a few working days, comment on the PR (the maintainers are subscribed), or @-mention the maintainers team shown in its reviewers.
+
+If we’ve asked for changes or more info and haven’t heard back for a while, we’ll check in on the thread, and if it stays quiet after that we’ll close it. You’re always welcome to reopen it when you’re ready to pick it back up.
 
 ## Need help?
 
